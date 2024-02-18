@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "sessionlogin",
+  "version": "${version}",
+  "name": "Session Login",
+  "description": "",
+  "authors": [],
+  "license": "All-Rights-Reserved",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "missing.mods.sessionlogin.client.SessionLoginClient"
+    ],
+    "main": [
+      "missing.mods.sessionlogin.SessionLogin"
+    ]
+  },
+  "mixins": [
+    "sessionlogin.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": ">=1.20"
+  }
+}
